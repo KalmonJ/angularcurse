@@ -1,0 +1,10 @@
+<p>two-wai-binding works!</p>
+
+<form>
+  <input type="text" [(ngModel)] = 'name' name="name" placeholder="digite seu nome">
+  <input type="submit">
+  <hr>
+  <input type="text"  [(ngModel)] = 'text' name="text" placeholder="digite alguma coisa">
+</form>
+<p>{{text}}</p>
+<p  *ngIf = 'name != ""'  >o nome é :{{name}}</p>
